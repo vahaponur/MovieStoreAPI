@@ -18,13 +18,13 @@ namespace DataAccess.Concrete.EntityFramework
             {
                 ActorDetailDTO actorDetailDTO = new ActorDetailDTO();
                 #region MapActor
-                var actor = context.Actors.SingleOrDefault(a => a.Id == id);
+                var actor = context.Actors.SingleOrDefault(a => a.Id == actorId);
                 actorDetailDTO.FirstName = actor.FirstName;
                 actorDetailDTO.LastName = actor.LastName;
                 #endregion
 
                 #region MapMovies
-                var movieIds = context.MoviesActors.Where(m => m.ActorId == id).ToList();
+                var movieIds = context.MoviesActors.Where(m => m.ActorId == actorId).ToList();
                 foreach (var item in movieIds)
                 {
                     var movie = context.Movies.SingleOrDefault(m => m.Id == item.MovieId);
@@ -36,6 +36,6 @@ namespace DataAccess.Concrete.EntityFramework
                 return actorDetailDTO;
             }
         }
-
+      
     }
 }

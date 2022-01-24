@@ -11,7 +11,7 @@ namespace Entities.DTO
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string[] BuyedMovies { get; set; }
-        public string[] FavoriteGenres { get; set; }
+        public List<string> BuyedMovies { get; set; }
+        public List<string> FavoriteGenres { get; set; }
     }
 }

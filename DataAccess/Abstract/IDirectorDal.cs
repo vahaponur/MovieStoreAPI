@@ -11,6 +11,6 @@ namespace DataAccess.Abstract
 {
     public interface IDirectorDal:IEntityRepository<Director>
     {
-        DirectorDetailDTO GetDirectorDetail(int id);
+        DirectorDetailDTO GetDirectorDetail(int directorId);
     }
 }

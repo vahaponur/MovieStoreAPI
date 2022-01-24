@@ -10,9 +10,9 @@ namespace Entities.DTO
     public class MovieDetailDTO:IDto
     {
         public string MovieName { get; set; }
-        public string[] Directors { get; set; }
-        public string[] Actors { get; set; }
-        public int GenreId { get; set; }
+        public List<string> Directors { get; set; }
+        public List<string> Actors { get; set; }
+        public string GenreName { get; set; }
         public decimal Price { get; set; }
     }
 }

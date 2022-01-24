@@ -1,5 +1,5 @@
 ﻿using Core.DataAccess;
-using Entities.Concrete;
+using Core.Entities.Concrete;
 using Entities.DTO;
 using System;
 using System.Collections.Generic;
@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Abstract
 {
-    public interface IMovieDal:IEntityRepository<Movie>
+    public interface IUserDal:IEntityRepository<User>
     {
-        MovieDetailDTO GetMovieDetail(int movieId);
+       
     }
 }
