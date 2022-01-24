@@ -13,5 +13,10 @@ namespace Entities.DTO
         public string LastName { get; set; }
         public List<string> BuyedMovies { get; set; }
         public List<string> FavoriteGenres { get; set; }
+        public CustomerProfileDTO()
+        {
+            BuyedMovies = new List<string>();
+            FavoriteGenres = new List<string>();
+        }
     }
 }

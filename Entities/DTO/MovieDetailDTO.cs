@@ -14,5 +14,10 @@ namespace Entities.DTO
         public List<string> Actors { get; set; }
         public string GenreName { get; set; }
         public decimal Price { get; set; }
+        public MovieDetailDTO()
+        {
+            Directors = new List<string>();
+            Actors = new List<string>();
+        }
     }
 }

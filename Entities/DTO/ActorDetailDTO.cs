@@ -12,7 +12,10 @@ namespace Entities.DTO
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public List<string> Movies{ get; set; }
-
+        public ActorDetailDTO()
+        {
+            Movies = new List<string>();
+        }
 
     }
 }

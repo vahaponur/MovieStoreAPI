@@ -17,6 +17,7 @@ namespace DataAccess.Concrete.EntityFramework
             using (var context = new MovieStoreContext())
             {
                 ActorDetailDTO actorDetailDTO = new ActorDetailDTO();
+
                 #region MapActor
                 var actor = context.Actors.SingleOrDefault(a => a.Id == actorId);
                 actorDetailDTO.FirstName = actor.FirstName;

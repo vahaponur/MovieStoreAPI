@@ -17,6 +17,7 @@ namespace DataAccess.Concrete.EntityFramework
             using (var context = new MovieStoreContext())
             {
                 CustomerProfileDTO customerProfileDto = new CustomerProfileDTO();
+                
                 #region MapUser
                 var customer = context.Users.SingleOrDefault(c => c.Id == customerId);
                 customerProfileDto.FirstName = customer.FirstName;

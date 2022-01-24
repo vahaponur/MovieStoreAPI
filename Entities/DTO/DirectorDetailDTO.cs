@@ -15,5 +15,9 @@ namespace Entities.DTO
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public List<string> Movies { get; set; }
+        public DirectorDetailDTO()
+        {
+            Movies = new List<string>();
+        }
     }
 }
